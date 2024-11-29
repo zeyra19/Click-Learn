@@ -95,7 +95,7 @@ const Home: React.FC = () => {
           Seviyene Göre 10 İngilizce Kelime Öğren
         </Typography>
         <ButtonGroup onLevelSelect={handleLevelSelect} />
-        {loading && <Typography>Loading...</Typography>}
+        {loading && <Typography>Loading..</Typography>}
         {!loading && words.length > 0 && (
           <Box className={`card-container ${animation}`}>
             <WordCard
