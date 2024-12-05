@@ -24,6 +24,10 @@ const ButtonGroup: React.FC<ButtonGroupProps> = ({ onLevelSelect }) => {
           flexWrap: 'nowrap',
           overflowX: 'auto',
         },
+        '@media (min-width:900px)': {
+          gap: 0.8,
+          paddingX: 4,
+        },
       }}
     >
       {LEVELS.map((level) => (
@@ -59,6 +63,10 @@ const ButtonGroup: React.FC<ButtonGroupProps> = ({ onLevelSelect }) => {
               fontSize: '11px',
               padding: '4px 4px',
               minWidth: '50px',
+            },
+            '@media (min-width:900px)': {
+              fontSize: '11px',
+              padding: '8px 6px',
             },
           }}
           aria-label={`Select level ${level}`}
