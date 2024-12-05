@@ -19,8 +19,10 @@ const ButtonGroup: React.FC<ButtonGroupProps> = ({ onLevelSelect }) => {
       paddingX={2}
       sx={{
         '@media (max-width:600px)': {
-          gap: 1,
-          paddingX: 1,
+          gap: 0.5,
+          paddingX: 0.5,
+          flexWrap: 'nowrap',
+          overflowX: 'auto',
         },
       }}
     >
@@ -33,12 +35,12 @@ const ButtonGroup: React.FC<ButtonGroupProps> = ({ onLevelSelect }) => {
             onLevelSelect(level);
           }}
           sx={{
-            padding: '8px 12px',
+            padding: '12px 16px',
             borderRadius: '8px',
             textTransform: 'none',
             whiteSpace: 'nowrap',
             fontWeight: 600,
-            fontSize: '13px',
+            fontSize: '15px',
             backgroundColor: selectedCard === level ? '#d7d7d4' : '#939391',
             color: selectedCard === level ? 'black' : 'white',
             transition: 'all 0.2s ease-in-out',
@@ -54,8 +56,9 @@ const ButtonGroup: React.FC<ButtonGroupProps> = ({ onLevelSelect }) => {
               boxShadow: '0 0 0 2px rgba(38, 166, 154, 0.6)',
             },
             '@media (max-width:600px)': {
-              fontSize: '12px',
-              padding: '6px 10px',
+              fontSize: '11px',
+              padding: '4px 4px',
+              minWidth: '50px',
             },
           }}
           aria-label={`Select level ${level}`}

@@ -10,8 +10,8 @@ const WordCard: React.FC<WordCardProps> = ({ word, meaning }) => {
   return (
     <Card variant="outlined" sx={{ marginY: 2 }}>
       <CardContent>
-        <Typography variant="h5">{word}</Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="h4">{word}</Typography>
+        <Typography variant="body1" color="text.secondary">
           {meaning}
         </Typography>
       </CardContent>
